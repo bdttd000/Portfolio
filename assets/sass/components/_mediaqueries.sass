@@ -1,0 +1,64 @@
+@media screen and (max-width: 1000px)
+    .main-text
+        font-size: 5rem
+        font-weight: var(--font-semi-bold)
+    
+@media screen and (max-width: 766px)
+    .main-text
+        font-size: 4rem
+        font-weight: var(--font-semi-bold)
+
+@media screen and (max-width: 564px)
+    .main-text
+        font-size: 3rem
+        font-weight: var(--font-semi-bold)
+
+@media screen and (max-width: 340px)
+    .container
+        margin-left: var(--mb-1)
+        margin-right: var(--mb-1)
+
+    .section__title
+        font-size: var(--big-font-size)
+
+    .main-text
+        font-size: 2rem
+        font-weight: var(--font-semi-bold)
+
+        
+@media screen and (min-width: 767px)
+    body
+        margin: 0
+
+    .section
+        padding: 6rem 0 2rem
+    
+    .nav
+        height: calc(var(--header-height) + 1.5rem)
+        
+        &__list
+            flex-direction: row
+            column-gap: 3.5rem
+        
+        &__link
+            font-size: var(--normal-font-size)
+            text-transform: initial
+        
+        &__toggle,
+        &__close
+            display: none
+
+    .footer__container
+        grid-template-columns: .4fr .7fr .7fr 1fr
+    
+@media screen and (min-width: 1024px)
+    .container
+        margin-left: auto
+        margin-right: auto
+    
+    .footer
+        &__container
+            padding-top: 3rem
+        
+        &__copy
+            margin-top: 9rem

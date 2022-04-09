@@ -1,0 +1,144 @@
+.projects
+    display: grid
+    align-content: center
+
+    .container-100
+        display: grid
+        grid-template-columns: 1fr
+
+        .main-text 
+            margin-bottom: 5rem
+
+        > div:not(:first-of-type)
+            display: grid
+            grid-template-columns: 50vw 50vw
+
+            @media screen and (max-width: 1200px) 
+                grid-template-columns: 100%
+                grid-template-areas: "description" "photo"
+
+                .photo
+                    grid-area: photo
+
+                .description
+                    grid-area: description
+
+            .photo
+                width: 50vw
+                height: 500px
+                overflow: hidden
+
+                @media screen and (max-width: 1200px) 
+                    width: 90%
+                    margin: auto
+                    margin-bottom: var(--mb-2-5)
+
+                @media screen and (max-width: 800px)
+                    height: 300px
+
+                @media screen and (max-width: 400px)
+                    height: 200px
+
+                img
+                    display: block
+
+            .description
+                align-self: center
+                justify-self: center
+                margin: 0 2rem
+
+                @media screen and (max-width: 1200px) 
+                    margin: 0 1.5rem
+                    margin-bottom: var(--mb-2-5)
+
+                @media screen and (max-width: 700px) 
+                    margin: 0 0.5rem
+                    margin-bottom: var(--mb-2-5)
+
+                p
+                    text-align: center
+                    margin: 1rem 0
+
+                    &:nth-of-type(1)
+                        font-size: var(--big-font-size)
+                        color: var(--lightest-grey)
+
+                    &:nth-of-type(2)
+                        font-size: var(--h3-font-size)
+                        color: var(--lighter-grey)
+
+                    &:nth-of-type(3)
+                        transition: color 0.3s ease
+                        font-size: var(--h3-font-size)
+                        font-weight: var(--font-semi-bold)
+                        a
+                            color: var(--white)
+                            transition: color 0.3s ease
+                        
+#szkolna_bursa
+    background-image: url("../img/projects/szkolna_bursa.webp")
+
+#szkolna_bursa_text
+    color: var(--color-szkolna-bursa)
+
+#szkolna_bursa_check:hover
+    color: var(--color-szkolna-bursa)
+
+#studencka_bursa
+    background-image: url("../img/projects/studencka_bursa.webp")
+
+#studencka_bursa_text
+    color: var(--color-studencka-bursa)
+
+#studencka_bursa_check:hover
+    color: var(--color-studencka-bursa)
+
+#zmmpir
+    background-image: url('../img/projects/strona_zwiazkowa.webp')
+
+#zmmpir_text
+    color: var(--color-zmmpir)
+
+#zmmpir_check:hover
+    color: var(--color-zmmpir)
+
+#janusz_molka_1
+    background-image: url("../img/projects/janusz_molka_1.webp")
+
+#janusz_molka_1_text
+    color: var(--color-janusz-molka-1)
+
+#janusz_molka_1_check:hover
+    color: var(--color-janusz-molka-1)
+
+#janusz_molka_2
+    background-image: url("../img/projects/janusz_molka_2.webp")
+
+#janusz_molka_2_text
+    color: var(--color-janusz-molka-2)
+
+#janusz_molka_2_check:hover
+    color: var(--color-janusz-molka-2)
+
+#biuro
+    background-image: url("../img/projects/biuro.webp")
+
+#biuro_text
+    color: var(--color-biuro)
+
+#biuro_check:hover
+    color: var(--color-biuro)
+
+#szkolna_bursa,
+#studencka_bursa,
+#zmmpir,
+#janusz_molka_1,
+#janusz_molka_2,
+#biuro
+    background-size: cover
+    background-position: center
+    filter: grayscale(100%)
+    transition: filter 0.5s ease
+
+    &:hover
+        filter: grayscale(0)

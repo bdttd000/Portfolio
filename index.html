@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jakub Wartak - portfolio">
+    <link rel="stylesheet" href="./assets/sass/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Jakub Wartak</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <h1>Jakub Wartak</h1>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link active-link">O mnie</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projekty</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Umiejętności</a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#contact" class="nav__link">Kontakt</a>
+                    </li> -->
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="about section min-height-100" id="about">
+            <div class="container">
+                <div class="main-text">O mnie</div>
+                <div class="photo-1">
+                    <img src="./assets/img/about_photos/1.webp" alt="brak zdjęcia">
+                </div>
+                <div class="photo-2">
+                    <img src="./assets/img/about_photos/2.webp" alt="brak zdjęcia">
+                </div>
+                <div class="description">
+                    <p>Hej, mam na imię Kuba i jestem studentem drugiego roku informatyki na Politechnica Krakowskiej im. Tadeusza Kościuszki.</p>
+                    <br>
+                    <p>Na codzień zajmuję się tworzeniem stron internetowych od prostych wizytówek po złożone panele administracyjne, które oszczędzają ludziom wiele czasu.</p>
+                    <br>
+                    <p>W wolnych chwilach lubię uprawiać wszelakie sporty (najlepiej drużynowe), grać na gitarze, w szachy lub gry komputerowe.</p>
+                    <br>
+                    <p>Poniżej znajdziesz jakie projekty prowadzę lub prowadziłem oraz jak oceniam swoje zdolności w programowaniu (ocena jest subiektywna).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section min-height-100" id="projects">
+            <div class="container-100">
+                <div class="main-text">Moje projekty</div>
+                <div class="project-container">
+                    <div class="photo photo-left" id="szkolna_bursa"></div>
+                    <div class="description desc-right">
+                        <p><span id="szkolna_bursa_text">BURSA</span> SZKÓŁ ŚREDNICH</p>
+                        <p>Strona krakowskiej bursy szkół średnich zawierająca panel administracyjny do modyfikowania treści, dodawania nowych zdjęć, tworzenia nowych aktualności oraz przesyłania plików.</p>
+                        <p><a href="https://www.szkolnabursa.pl/" target="_blank" id="szkolna_bursa_check">Zobacz tutaj</a></p>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="description desc-left">
+                        <p><span id="studencka_bursa_text">BURSA</span> STUDENCKA</p>
+                        <p>Strona krakowskiej bursy studenckiej, analogiczna do wyżej wymienionej strony szkół średnich. Posiada panel umożliwający nam zmianę dowolnych danych na stronie.</p>
+                        <p><a href="https://www.studenckabursa.pl/" target="_blank" id="studencka_bursa_check">Zobacz tutaj</a></p>
+                    </div>
+                    <div class="photo photo-right" id="studencka_bursa"></div>
+                </div>
+                <div class="project-container">
+                    <div class="photo photo-left" id="zmmpir"></div>
+                    <div class="description desc-right">
+                        <p><span id="zmmpir_text">ZMMPiR</span></p>
+                        <p>Strona Związku Męskiej Młodzieży Przemysłowej i Rzemieślniczej. Matczyna strona dwóch poprzednich posiadająca system zarządzania treściami.</p>
+                        <p><a href="https://www.zmmpir.pl/" target="_blank" id="zmmpir_check">Zobacz tutaj</a></p>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="description desc-left">
+                        <p><span id="janusz_molka_1_text">JANUSZ</span> MÓŁKA</p>
+                        <p>Strona stworzona dla Pana Janusza Mółki. Wizytówka z niecodziennym ułożeniem poszczególnych komponentów.</p>
+                        <p><a href="http://jakubwartak.pl/portfolio/home/" target="_blank" id="janusz_molka_1_check">Zobacz tutaj</a></p>
+                    </div>
+                    <div class="photo photo-right" id="janusz_molka_1"></div>
+                </div>
+                <div class="project-container">
+                    <div class="photo photo-left" id="janusz_molka_2"></div>
+                    <div class="description desc-right">
+                        <p><span id="janusz_molka_2_text">JANUSZ</span> MÓŁKA</p>
+                        <p>Docelowa strona powyższej wizytówki. Posiada możliwości zarządzania treścią poprzez wbudowany panel.</p>
+                        <p><a href="http://jakubwartak.pl/portfolio/main/" target="_blank" id="janusz_molka_2_check">Zobacz tutaj</a></p>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="description desc-left">
+                        <p><span id="biuro_text">FIRMOWY</span> PANEL</p>
+                        <p>Panel administracyjny umożliwający nam lepszą kontrolę nad firmą. Jego zadaniem jest tworzenie codziennych zestawień czynności pracowników, tworzenie ofert, tworzenie faktur, dodawanie klientów, wycena rentowności projektów oraz edycja wszystkich poprzednich udogodnień.</p>
+                        <p id="biuro_check">Ze względu na charakter panelu więcej informacji drogą telefoniczną/mailową</p>
+                    </div>
+                    <div class="photo photo-right" id="biuro"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section min-height-100" id="skills">
+            <div class="main-text">Umiejętności</div>
+            <div class="container">
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/html5.svg" class="svg_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/css3.svg" class="svg_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/js.svg" class="svg_logo big_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/jquery.svg" class="svg_logo small_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/sass.svg" class="svg_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/bootstrap.svg" class="svg_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/php.svg" class="svg_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/mysql.svg" class="svg_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/skills/c.svg" class="svg_logo" alt="brak zdjęcia">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="active"></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="container">
+            <div>
+                <div class="contact">
+                    <div>Dane kontaktowe:</div>
+                    <ul>
+                        <li>+48 515 750 766</li>
+                        <li>jakub.wartak27@gmail.com</li>
+                        <li>kuba428@op.pl</li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <div>
+                        <a href="https://www.facebook.com/kuba.wartak/" target="_blank">
+                            <img src="./assets/img/social-links/facebook.svg" alt="brak zdjęcia">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/bdttd000/" target="_blank">
+                            <img src="./assets/img/social-links/instagram.svg" alt="brak zdjęcia">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/bdttd000" target="_blank">
+                            <img src="./assets/img/social-links/github.svg" alt="brak zdjęcia">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://discord.com/users/393820268898025482" target="_blank">
+                            <img src="./assets/img/social-links/discord.svg" alt="brak zdjęcia">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy 2021 by Jakub Wartak 
+             </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+    
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/reveal.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

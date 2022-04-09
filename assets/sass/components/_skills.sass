@@ -1,0 +1,68 @@
+.skills
+    margin-bottom: var(--mb-2-5)
+
+    .main-text
+        margin-bottom: 5rem
+
+    .container
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+        grid-gap: var(--mb-1)
+
+        > div 
+            height: 250px
+            background-color: var(--lightest-grey)
+            padding: 1rem
+            border-radius: 2rem
+            display: grid
+            grid-template-rows: repeat(9, 1fr)
+            grid-template-columns: repeat(auto-fill, 1fr)
+
+            > div:nth-of-type(1)
+                // background-color: red
+                grid-row: 1 / 8
+                grid-column: 1
+                z-index: var(--z-tooltip)
+                display: flex
+                align-items: flex-end
+
+                .svg_logo 
+                    max-width: 100%
+                    max-height: 100%
+                    margin: auto
+
+                    &.big_logo
+                        padding: 1rem
+
+                    &.small_logo
+                        height: -webkit-fill-available
+
+            > div:nth-of-type(2)
+                grid-row: 6 / 10
+                grid-column: 1
+                display: grid
+                grid-template-rows: repeat(2, 1fr)
+                background-color: var(--grey)
+                border-radius: 1.5rem
+                transition: background-color 0.5s ease
+
+                > div
+                    grid-row: 2 / 3
+                    display: flex
+                    align-items: center
+                    justify-content: space-around
+                    margin: 0 1rem
+
+                    > div 
+                        width: 100%
+                        height: 10px
+                        background-color: black
+                        border-radius: 5px
+                        margin: 0 2px
+
+                        &.active
+                            background-color: green
+        
+            &:hover > div:nth-of-type(2)
+                background-color: inherit
+            
