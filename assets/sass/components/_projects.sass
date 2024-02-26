@@ -71,70 +71,79 @@
                         transition: color 0.3s ease
                         font-size: var(--h3-font-size)
                         font-weight: var(--font-semi-bold)
-                        a
-                            color: var(--white)
-                            transition: color 0.3s ease
 
 #szkolna_bursa
     background-image: url("../img/projects/szkolna_bursa.webp")
 
-#szkolna_bursa_text
-    color: var(--color-szkolna-bursa)
-
-#szkolna_bursa_check:hover
-    color: var(--color-szkolna-bursa)
+.szkolna_bursa
+    &_text
+        color: var(--color-szkolna-bursa)
+    &_check
+        transition: color 0.2s ease
+        &:hover
+            color: var(--color-szkolna-bursa)
 
 #studencka_bursa
     background-image: url("../img/projects/studencka_bursa.webp")
 
-#studencka_bursa_text
-    color: var(--color-studencka-bursa)
-
-#studencka_bursa_check:hover
-    color: var(--color-studencka-bursa)
+.studencka_bursa
+    &_text
+        color: var(--color-studencka-bursa)
+    &_check
+        transition: color 0.2s ease
+        &:hover
+            color: var(--color-studencka-bursa)
 
 #zmmpir
     background-image: url('../img/projects/strona_zwiazkowa.webp')
 
-#zmmpir_text
-    color: var(--color-zmmpir)
-
-#zmmpir_check:hover
-    color: var(--color-zmmpir)
-
-#janusz_molka_1
-    background-image: url("../img/projects/janusz_molka_1.webp")
-
-#janusz_molka_1_text
-    color: var(--color-janusz-molka-1)
-
-#janusz_molka_1_check:hover
-    color: var(--color-janusz-molka-1)
-
-#janusz_molka_2
-    background-image: url("../img/projects/janusz_molka_2.webp")
-
-#janusz_molka_2_text
-    color: var(--color-janusz-molka-2)
-
-#janusz_molka_2_check:hover
-    color: var(--color-janusz-molka-2)
+.zmmpir
+    &_text
+        color: var(--color-zmmpir)
+    &_check
+        transition: color 0.2s ease
+        &:hover
+            color: var(--color-zmmpir)
 
 #biuro
     background-image: url("../img/projects/biuro.webp")
 
-#biuro_text
-    color: var(--color-biuro)
+.biuro
+    &_text
+        color: var(--color-biuro)
+    &_check
+        transition: color 0.2s ease
+        &:hover
+            color: var(--color-biuro)
 
-#biuro_check:hover
-    color: var(--color-biuro)
+#memonks
+    background-image: url("../img/projects/memonks.webp")
+
+.memonks
+    &_text
+        color: var(--color-memonks)
+    &_check
+        transition: color 0.2s ease
+        &:hover
+            color: var(--color-memonks)
+
+#redempaw
+    background-image: url("../img/projects/redempaw.webp")
+
+.redempaw
+    &_text
+        color: var(--color-redempaw)
+    &_check
+        transition: color 0.2s ease
+        &:hover
+            color: var(--color-redempaw)
 
 #szkolna_bursa,
 #studencka_bursa,
 #zmmpir,
-#janusz_molka_1,
-#janusz_molka_2,
-#biuro
+#memonks,
+#biuro,
+#redempaw
     background-size: cover
     background-position: center
     filter: grayscale(100%)
